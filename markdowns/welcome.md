@@ -3,7 +3,7 @@
 ## Background
 SQL Server 2017 released on (general availability release) on October 2017 (Really? we are just trying to understand features of SQL 2016, ok, jokes apart :)) SQL 2017 released in parts, its first part, that is SQL 2017 CTP 1.0 (SQL version 14.0.1.246) was released on Nov-2016 (How can they release 2017 version in 2016?). Until now, SQL 2017 has come up with its 10 releases, the current release is SQL 2017 Release GA (SQL version 14.0.1000.169) [check here](https://docs.microsoft.com/en-us/sql/linux/sql-server-linux-release-notes#GA) for available releases in October 2017.
 
-*(**[See here for What's new in SQL 2016](https://www.codeproject.com/Articles/1111938/SQL-New-Features)**)*
+*(**[See here for What's new in SQL 2016](https://tech.io/playgrounds/5714/whats-new-in-sql-2016)**)*
 
 ## Introduction
 This version of SQL mainly connects to Linux and brings the power of SQL to Linux. In short, now you can install SQL 2017 on Linux (it's a great move), additionally SQL can be used in linux based docker container also. In this build, SQL gives you development language choice, you can develop it on-premise or cloud-based.
