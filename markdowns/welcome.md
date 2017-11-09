@@ -1,10 +1,74 @@
 # SQL 2017 New features
-
+![SQL2017]("https://www.codeproject.com/KB/database/1210268/SQL2017_1.png")
 ## Background
 SQL Server 2017 released on (general availability release) on October 2017 (Really? we are just trying to understand features of SQL 2016, ok, jokes apart :)) SQL 2017 released in parts, its first part, that is SQL 2017 CTP 1.0 (SQL version 14.0.1.246) was released on Nov-2016 (How can they release 2017 version in 2016?). Until now, SQL 2017 has come up with its 10 releases, the current release is SQL 2017 Release GA (SQL version 14.0.1000.169) [check here](https://docs.microsoft.com/en-us/sql/linux/sql-server-linux-release-notes#GA) for available releases in October 2017.
+
 *(**[See here for What's new in SQL 2016](https://www.codeproject.com/Articles/1111938/SQL-New-Features)**)*
 
+## Introduction
+This version of SQL mainly connects to Linux and brings the power of SQL to Linux. In short, now you can install SQL 2017 on Linux (it's a great move), additionally SQL can be used in linux based docker container also. In this build, SQL gives you development language choice, you can develop it on-premise or cloud-based.
+
+In this build, SQL also improves performance, scalability and features, in each of its parts, like Database Engine, Integration Services, Master Data Services, Analysis Services, etc. In this article, we will take a look at them one by one.
+
+Following are some Database Engine new features.
+
+### identity_cache
+![identity_cache]("https://www.codeproject.com/KB/database/1210268/IDENTITY_CACHE.png")
 This Basic template lets you get started quickly with a simple working example. If it is your first contribution then you should have a look at the [Getting Started](https://tech.io/doc/getting-started-create-playground) document.
+
+This option helps you to avoid discrepancy in values of identity columns, in the case of server shut down unexpectedly or any failover occur, or even if you switch to some secondary server. This option is used with '**ALTER DATABASE SCOPED CONFIGURATION**' statement. This statement is used to enable database configuration settings. The syntax is as follows:
+
+```javascript
+ALTER DATABASE SCOPED CONFIGURATION
+{      
+     {  [ FOR SECONDARY] SET <set_options>  }  
+}
+| CLEAR PROCEDURE_CACHE
+| SET < set_options >
+[;]  
+
+< set_options > ::=  
+{
+    MAXDOP = { <value> | PRIMARY}  
+    | LEGACY_CARDINALITY_ESTIMATION = { ON | OFF | PRIMARY}  
+    | PARAMETER_SNIFFING = { ON | OFF | PRIMARY}  
+    | QUERY_OPTIMIZER_HOTFIXES = { ON | OFF | PRIMARY}
+    | IDENTITY_CACHE = { ON | OFF }
+}
+```
+
+### Adaptive Query Processing Improvements
+![Adaptive]("https://www.codeproject.com/KB/database/1210268/Q_Process.png")
+
+Do you want to improve query execution performance? Then this feature will help you. This feature is supported in SQL server and Azure SQL databases.
+
+Do you know normal optimization flow of SQL Query execution? If no, then check the below steps:
+
+1. Initially Query optimizer calculates all feasible query execution plan for a given query.
+2. Then it gets the lowest cost /fastest plan.
+3. Finally, the lowest estimated plan will be chosen by the optimizer to execute query and then execution started.
+
+Now in this process, there are some drawbacks:
+
+1. If lowest estimated execution plan may go wrong, then it affects performance.
+2. If insufficient memory gets allocated for processing, then it leads to spills to disk.
+3. If assigned memory is incorrectly sized, then it leads to memory waste.
+
+To overcome all these issues, you can use this SQL 2017 feature.
+
+*Batch Mode Memory Grant Feedback*
+
+This feedback (technique) re-calculate (actually) required memory for the execution plan and grant it from cache
+
+*Batch Mode Adaptive Joins*
+
+To execute plan faster, it has Hash join and nested loop join, after scanning the first input of execution plan, it decides which join to use to produce output in optimal speed.
+
+*Interleaved Execution*
+In interleaved execution, it takes a 'pause' in optimization execution plan, if it encountered multi-statement table valued functions. Then, it just calculates perfect cardinality and then resumes optimization.
+
+### Automatic Tuning
+![Auto_Tunbe]("https://www.codeproject.com/KB/database/1210268/Auto_Tune.png")
 
 
 Please refer to the [documentation](https://tech.io/doc) to learn more about adding programming exercises within your contribution.
