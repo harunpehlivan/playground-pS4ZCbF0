@@ -13,7 +13,7 @@ In this build, SQL also improves performance, scalability and features, in each 
 Following are some Database Engine new features.
 
 ### identity_cache
-![identity_cache]("https://www.codeproject.com/KB/database/1210268/IDENTITY_CACHE.png")
+![identity_cache](https://www.codeproject.com/KB/database/1210268/IDENTITY_CACHE.png)
 This Basic template lets you get started quickly with a simple working example. If it is your first contribution then you should have a look at the [Getting Started](https://tech.io/doc/getting-started-create-playground) document.
 
 This option helps you to avoid discrepancy in values of identity columns, in the case of server shut down unexpectedly or any failover occur, or even if you switch to some secondary server. This option is used with '**ALTER DATABASE SCOPED CONFIGURATION**' statement. This statement is used to enable database configuration settings. The syntax is as follows:
@@ -38,7 +38,7 @@ ALTER DATABASE SCOPED CONFIGURATION
 ```
 
 ### Adaptive Query Processing Improvements
-![Adaptive]("https://www.codeproject.com/KB/database/1210268/Q_Process.png")
+![Adaptive](https://www.codeproject.com/KB/database/1210268/Q_Process.png)
 
 Do you want to improve query execution performance? Then this feature will help you. This feature is supported in SQL server and Azure SQL databases.
 
@@ -68,7 +68,7 @@ To execute plan faster, it has Hash join and nested loop join, after scanning th
 In interleaved execution, it takes a 'pause' in optimization execution plan, if it encountered multi-statement table valued functions. Then, it just calculates perfect cardinality and then resumes optimization.
 
 ### Automatic Tuning
-![Auto_Tunbe]("https://www.codeproject.com/KB/database/1210268/Auto_Tune.png")
+![Auto_Tunbe](https://www.codeproject.com/KB/database/1210268/Auto_Tune.png)
 
 As the words suggest, this feature checks out the problems in query performance, identifies them and fixes them with the recommended solution. There are a couple of automatic tuning techniques available in this feature:
 
@@ -84,7 +84,7 @@ This plan is available in SQL 2017 DB, it basically scans problematic plan (perf
 This feature is available in SQL 2017 Azure DB, here it basically identifies and corrects the order of indices. The indices which are removed and indices which are added.
 
 ### Graph DB
-![Graph DB]("https://www.codeproject.com/KB/database/1210268/Graph_DB.png")
+![Graph DB](https://www.codeproject.com/KB/database/1210268/Graph_DB.png)
 The graph database feature is newly introduced in SQL 2017.
 
 *What is Graph DB ?*
@@ -101,7 +101,7 @@ Here, keyword **MATCH** is used to query the graph table and sort the data, with
 With the help this feature, cross database transactions are now possible against different SQL instances (same SQL instance can be connected to different instances). It also supports database distributed transactions. [SQL 2016 also supports cross database access but only for only in same SQL server instance.]
 
 ## DTA Improvements
-![DTA]("https://www.codeproject.com/KB/database/1210268/DTA.png")
+![DTA](https://www.codeproject.com/KB/database/1210268/DTA.png)
 
 In SQL 2017, there is performance improvement in Database tuning advisor (DTA) with additional options for tuning advisor.
 
@@ -205,7 +205,7 @@ In the above example, we have concatenated all names separated by semicolon ( ; 
 | City 1   | name1;name2;name3;name4 |
 
 ## What's New in SSRS (Reporting Services) in SQL 2017
-![SSRS]("https://www.codeproject.com/KB/database/1210268/SSRS.png")
+![SSRS](https://www.codeproject.com/KB/database/1210268/SSRS.png)
 
 - From now onwards, there is no SSRS setup available with SQL server setup, you need to download it from download center [here].
 - Now, Query designer has the support of DAX, now native DAX queries can be created against SSAS (Analysis services), this comes under the latest release of SQL tools and report builder
@@ -228,7 +228,7 @@ In the above example, we have concatenated all names separated by semicolon ( ; 
 For more information on SSAS in SQL 2017, switch [here](https://docs.microsoft.com/en-us/sql/analysis-services/what-s-new-in-sql-server-analysis-services-2017)
 
 ## Machine Learning
-![SSRS]("https://www.codeproject.com/KB/database/1210268/MachineLearning.png")
+![SSRS](https://www.codeproject.com/KB/database/1210268/MachineLearning.png)
 
 We know SQL 2016 is now supporting R services, it has now renamed to SQL Server Machine learning services. With the help of this, you can easily use R or Python scripts using SQL server.
 
@@ -246,7 +246,7 @@ To use machine learning in an intelligent and powerful way, SQL uses the followi
 **microsoftml** is the Microsoft R server package that supports machine language algorithms, Microsoft developed this library for internal machine learning, but over the years, it has improved and supports fast data streaming, large text transformations, etc.
 
 ## Linux Support
-![Linux Support]("https://www.codeproject.com/KB/database/1210268/Linux.png")
+![Linux Support](https://www.codeproject.com/KB/database/1210268/Linux.png)
 
 Basically, the main goal of this build is to release product on Linux, this build of SQL release with the name "SQL 2017 on Linux and Windows", here are few key features of "SQL on Linux":
 
