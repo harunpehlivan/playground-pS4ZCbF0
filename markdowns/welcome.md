@@ -1,7 +1,7 @@
 # SQL 2017 New features
 
 ## Background
-SQL Server 2017 released on (general availability release) on October 2017 (Really? we are just trying to understand features of SQL 2016, ok, jokes apart :)) SQL 2017 released in parts, its first part, that is SQL 2017 CTP 1.0 (SQL version 14.0.1.246) was released on Nov-2016 (How can they release 2017 version in 2016?). Until now, SQL 2017 has come up with its 10 releases, the current release is SQL 2017 Release GA (SQL version 14.0.1000.169) [check here] (https://docs.microsoft.com/en-us/sql/linux/sql-server-linux-release-notes#GA) for available releases in October 2017.
+SQL Server 2017 released on (general availability release) on October 2017 (Really? we are just trying to understand features of SQL 2016, ok, jokes apart :)) SQL 2017 released in parts, its first part, that is SQL 2017 CTP 1.0 (SQL version 14.0.1.246) was released on Nov-2016 (How can they release 2017 version in 2016?). Until now, SQL 2017 has come up with its 10 releases, the current release is SQL 2017 Release GA (SQL version 14.0.1000.169) [check here](https://docs.microsoft.com/en-us/sql/linux/sql-server-linux-release-notes#GA) for available releases in October 2017.
 *(**[See here for What's new in SQL 2016](https://www.codeproject.com/Articles/1111938/SQL-New-Features)**)*
 
 This Basic template lets you get started quickly with a simple working example. If it is your first contribution then you should have a look at the [Getting Started](https://tech.io/doc/getting-started-create-playground) document.
